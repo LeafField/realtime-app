@@ -21,6 +21,7 @@ export const useDownloadUrl = (
           throw error;
         }
         setFullUrl(URL.createObjectURL(data));
+        setIsLoading(false);
       };
       download();
     }

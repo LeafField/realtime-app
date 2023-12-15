@@ -13,11 +13,12 @@ const Home: NextPage = () => {
     const getSession = async () => {
       const { data: auth } = await supabase.auth.getSession();
       setSession(auth.session);
-      supabase.auth.onAuthStateChange((event, session) => {
-        setSession(session);
-      });
     };
     getSession();
+
+    supabase.auth.onAuthStateChange((event, session) => {
+      setSession(session);
+    });
   }, [setSession]);
 
   return (

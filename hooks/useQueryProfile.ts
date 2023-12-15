@@ -32,6 +32,7 @@ export const useQueryProfile = () => {
     }
 
     if (error && status !== 406) {
+      console.log('ここかな？');
       throw new Error(error.message);
     }
     return data;
