@@ -6,7 +6,7 @@ import useStore from '../store';
 import { useQueryProfile } from '../hooks/useQueryProfile';
 import { useMutateProfile } from '../hooks/useMutateProfile';
 import { useDownloadUrl } from '../hooks/useDownloadUrl';
-import { useUploadAbatarimg } from '../hooks/useUploadAbatarimg';
+import { useUploadAbatarimg } from '../hooks/useUploadAvatarimg';
 import { Spinner } from './Spinner';
 
 export const UserProfile: FC = () => {
